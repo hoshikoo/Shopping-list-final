@@ -1,0 +1,337 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/*ol, ul {
+	list-style: none;
+}
+*/
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/** { 
+  outline: 1px solid black;
+}*/
+
+html { 
+  background: url("images/bkgdpic.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.memopad{
+  width:600px;
+  background: url("images/memopad.jpg") no-repeat;
+  background-size: 100%;
+  margin:auto;
+  margin-top:50px;
+
+}
+.shopping-list{
+  margin-left:25%;
+  width:35%;
+  margin-top: 45px;
+  margin-bottom: 3px;
+  opacity: 10%;
+  position:relative;
+} 
+
+#total-item{
+  width:45px;
+  margin-left: 370px;
+  margin-top:-60px;
+  font: 13px/1.2 "Oleo Script", cursive, Helvetica, Arial, sans-serif;
+  text-align: center;
+  border:red dotted 3px;
+  border-radius: 10px;
+  background-color:white;
+  color:#000047;
+}
+.total{
+  font: 18px/1.2 "Oleo Script", cursive, Helvetica, Arial, sans-serif;
+  color: red;
+}
+#checkeditem{
+  width:45px;
+  margin-left: 430px;
+  margin-top:-57px;
+  font: 13px/1.2 "Oleo Script", cursive, Helvetica, Arial, sans-serif;
+  text-align: center;
+  border:#99CCFF dotted 3px;
+  border-radius: 10px;
+  background-color:white;
+  color:#000047;
+  letter-spacing: -1px;
+}
+.checked{
+
+  font: 18px/1.2 "Oleo Script", cursive, Helvetica, Arial, sans-serif;
+  color: #99CCFF;
+}
+
+#memo{
+  width:350px;
+  font: 15px/1.5 "Oleo Script", cursive, Helvetica, Arial, sans-serif;
+  margin-left:150px;
+  margin-top: -23px;
+  color:#99CCFF;
+}
+/*switch*/
+.onoffswitch {
+    position: relative; width: 88px;
+     margin-left:50px;
+     margin-bottom: 4px;
+     margin-top: 0px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #000047; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 16px; padding: 0; line-height: 16px;
+    font-size: 12px; color: white; font-family:"Oleo Script", cursive, Helvetica, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "Sort ON";
+    padding-left: 7px;
+    background-color: #FA0000; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "Sort  OFF";
+    padding-right: 7px;
+    background-color: #99CCFF; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 9px; margin: 3.5px;
+    background: #FFFFFF;
+    border: 2px solid #000047; border-radius: 20px;
+    position: absolute; top: 0; bottom: 0; right: 57px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+/*switch*/
+
+
+
+form{
+  width: 100%;
+  margin-left:auto;
+  margin-right:auto;
+ font: 15px/1.5 "Oleo Script", cursive, Helvetica, Arial, sans-serif;
+}
+
+.fillin-form {
+  border: 2px solid #000047;
+  border-radius: 5px;
+  font: 15px/1.5 "Oleo Script", cursive, Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  margin-left:20%;
+  width: 50%;
+  margin-top:10px;
+  background-color:white;
+  color:#000047;
+}
+
+label{
+  margin-left: 10px;
+
+}
+
+ol{
+   list-style-type: decimal-leading-zero;
+   list-style-position: inside;
+   padding: 0;
+  color:#000047;
+ 
+ }
+
+li{
+   background: url("images/memopad_1Line.jpg") no-repeat; 
+   height:29px;
+   background-size: 100%;
+   text-indent: 20px;
+ }
+
+input[type=checkbox] + label {
+  color:#000047;
+  text-decoration:none;
+}
+
+input[type=checkbox]:checked + label {
+  color:#99CCFF;
+  text-decoration:line-through;
+}
+
+
+ol li .checkbox{
+  padding:none;
+  margin-top: 8px;
+  position: relative;
+  margin-left: 170px; 
+  *overflow: hidden;
+   float: left;
+   display: block
+}
+
+#button{
+  font-family:"Oleo Script", cursive, Helvetica, Arial, sans-serif;
+  padding:5px;
+  background-color: red;
+  border: 2px solid white;
+  color:white;
+  text-decoration:none;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.delete-button{
+  font-family:"Oleo Script", cursive, Helvetica, Arial, sans-serif;
+  padding:1px;
+  background-color: #99CCFF;
+  border: 2px white solid;
+  color:#000047;
+  text-decoration:none;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-top: 4px;
+  margin-left: 20px;
+
+}
+#bottom{
+width:600px;
+height:110px;
+
+position:relative;
+background: url("images/memopad_btm.jpg") no-repeat; 
+background-size: 100%;
+margin-top: -2px;
+}
+#empty{
+  font-family:"Oleo Script", cursive, Helvetica, Arial, sans-serif;
+  padding:5px;
+  background-color: #000047;
+  border: 2px solid white;
+  color:white;
+  text-decoration:none;
+  font-size: 15px;
+  border-radius: 5px;
+  position: absolute;
+  margin-left: 430px;
+  margin-top:30px;
+
+}
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+
+ol.comments div.memoline li.placeholder {
+  position: relative;
+  /** More li styles **/
+}
+ol.comments div.memoline li.placeholder:before {
+  position: absolute;
+  /** Define arrowhead **/
+}
+
+/* dialog div must be hidden */
+#basicModal{
+            display:none;
+            font-family:"Oleo Script", cursive, Helvetica, Arial, sans-serif;
+            /*background-color: #99CCFF;*/
+            color:red;
+            /*background: url("images/oscargrumpy12.jpg") no-repeat; */
+            text-align: center;
+        }
+
+        #oscar{
+          width:100%;
+
+        }
+
+#basicModal-2{
+            display:none;
+            font-family:"Oleo Script", cursive, Helvetica, Arial, sans-serif;
+            /*background-color: #99CCFF;*/
+            color:red;
+        }
+
+        #oscar2{
+          width:100%;
+
+        }
+#basicModal-3{
+            display:none;
+            font-family:"Oleo Script", cursive, Helvetica, Arial, sans-serif;
+            /*background-color: #99CCFF;*/
+            color:red;
+        }     
+        #blocks{
+          width:100%;
+        }
+.ui-widget-header{
+  font-family:"Oleo Script", cursive, Helvetica, Arial, sans-serif;
+}

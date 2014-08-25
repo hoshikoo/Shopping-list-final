@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="main.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script src="jquery-sortable.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css">
+    <!-- include the jquery library -->
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+             
+            <!-- include the jquery ui library -->
+            <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Shopping List</title>
+
+</head>
+<body>
+    <div class="memopad">
+	<img class="shopping-list" src="images/shopping-list.png"/>
+    <div id="total-item">Total<br><span class='total'></span><br>items</div>
+    <div id="checkeditem">Checked<br><span class='checked'></span><br>items</div>
+
+	<form>
+
+        <input class="fillin-form" id="comment-body" type="text" name="items" placeholder="type item"/>
+        <button id="button" type="button" name="add" >add item</button><br>
+
+
+<!--switch-->
+        <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+        <label class="onoffswitch-label" for="myonoffswitch">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+        </div>
+        <div id="memo">**Please turn on the swith to sort the items by dragging.</div>
+<!--switch-->
+
+
+         <ol class="comments">
+          <li>
+           <input type="checkbox" class="checkbox"  value="1">
+           <label>Item 1</label>
+           <button Class="delete-button" type="button" name="delete" >delete</button>
+          </li>
+          <li>
+           <input type="checkbox" class="checkbox"  value="2">
+           <label>Item 2</label>
+           <button Class="delete-button" type="button" name="delete" >delete</button>
+          </li>
+          <li>
+           <input type="checkbox" class="checkbox"  value="3">
+           <label>Item 3</label>
+           <button Class="delete-button" type="button" name="delete" >delete</button>
+          </li>
+         </ol>
+
+         <div id="bottom">
+            <button id="empty" type="button" name="add" >delete all</button>
+
+
+            <!-- 
+                -this is the actual dialog, yes, it is included in your html body, it is just hidden
+                -we did not set the dialog 'title' here, we set it in the js parameter
+            -->
+            <div id="basicModal">
+                "Do you want to delete all?"
+                <img id="oscar" src="images/oscargrumpy12.jpg">
+            </div>
+             
+            <div id="basicModal-2">
+                "Do you want to delete this item?"
+                <img id="oscar2" src="images/Oscar2.jpg">
+            </div>
+
+            <div id="basicModal-3">
+                "Please enter text to add to the list."
+                <img id="blocks" src="images/alphabet-blocks.jpg">
+                
+            </div>
+ 
+        </div>
+         
+
+        
+
+<!--
+         <input class="added-item" type="checkbox" name="shopping-item1" value="shopping-item1">shopping-item1<br>
+         <input class="added-item" type="checkbox" name="shopping-item2" value="shopping-item2">shopping-item2<br>  
+         <input class="added-item" type="checkbox" name="shopping-item3" value="shopping-item3">shopping-item3<br> 
+         <input class="added-item" type="checkbox" name="shopping-item4" value="shopping-item4" checked>shopping-item4<br> 
+         <input class="added-item" type="checkbox" name="shopping-item5" value="shopping-item5" checked>shopping-item5<br> 
+	-->	
+
+   </form>
+   </div>
+
+
+</body>
+
+</html>
